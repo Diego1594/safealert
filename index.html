@@ -1,103 +1,1108 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#102e49">
-  <meta name="description" content="Conoce SafeAlert: una propuesta de alerta comunitaria que conecta información clara, rutas de evacuación y seguridad familiar en Lima.">
-  <title>SafeAlert · Preparados, juntos</title>
-  <link rel="icon" type="image/svg+xml" href="assets/safealert.svg">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-  <div class="utility-bar"><div class="container utility-inner"><span>Una propuesta para comunidades más preparadas</span><span>Proyecto HCI · Lima, Perú</span></div></div>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="SafeAlert, inicio"><img src="assets/safealert.svg" width="38" height="42" alt=""><span>SafeAlert<small>PREPARADOS, JUNTOS</small></span></a>
-      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
-      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
-        <a href="#inicio" aria-current="page">Inicio</a><a href="#funciones">Funciones</a><a href="#para-quien">Para quién</a><a href="#como-funciona">Cómo funciona</a><a href="#nosotros">Nosotros</a><a href="#preguntas">Preguntas frecuentes</a><a href="#contacto" class="button button-small">Quiero conocer más</a>
-      </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#102e49" />
+    <meta
+      name="description"
+      content="Conoce SafeAlert: una propuesta de alerta comunitaria que conecta información clara, rutas de evacuación y seguridad familiar en Lima."
+    />
+    <title>SafeAlert · Preparados, juntos</title>
+    <link rel="icon" type="image/svg+xml" href="assets/safealert.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="utility-bar">
+      <div class="container utility-inner">
+        <span>Una propuesta para comunidades más preparadas</span
+        ><span>Proyecto HCI · Lima, Perú</span>
+      </div>
     </div>
-  </header>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="SafeAlert, inicio"
+          ><img src="assets/safealert.svg" width="38" height="42" alt="" /><span
+            >SafeAlert<small>PREPARADOS, JUNTOS</small></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+          <a href="#inicio" aria-current="page">Inicio</a
+          ><a href="#funciones">Funciones</a><a href="#para-quien">Para quién</a
+          ><a href="#como-funciona">Cómo funciona</a
+          ><a href="#nosotros">Nosotros</a
+          ><a href="#preguntas">Preguntas frecuentes</a
+          ><a href="#contacto" class="button button-small"
+            >Quiero conocer más</a
+          >
+        </nav>
+      </div>
+    </header>
 
-  <main id="contenido" tabindex="-1">
-    <nav class="page-navigation container" id="page-navigation" aria-label="Regresar y ubicación actual" hidden><div class="page-return"><button type="button" id="back-view">Volver</button><a href="#inicio">Volver al inicio</a></div><span id="current-view-label"></span></nav>
-    <p class="sr-only" id="view-announcement" aria-live="polite"></p>
-    <section class="hero" id="inicio" data-view="inicio" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="hero-copy-inner">
-          <span class="eyebrow light">ALERTA COMUNITARIA · SAFEALERT</span>
-          <h1 id="hero-title" tabindex="-1">Una alerta clara.<br>Una comunidad<br><span>más preparada.</span></h1>
-          <p id="hero-description">Saber qué ocurre, hacia dónde ir y cómo está tu familia. Una propuesta que reúne lo importante cuando más lo necesitas.</p>
-          <div class="hero-actions"><a class="button button-orange" href="#contacto">Quiero conocer SafeAlert</a><a class="button button-outline" href="#funciones">Explorar funciones</a></div>
-          <div class="hero-note"><span class="line-icon" data-icon="shield"></span><span>Diseñada alrededor de las personas y su comunidad.</span></div>
-          <div class="hero-carousel" role="group" aria-label="Mensajes de presentación"><div class="slide-dots"><button class="slide-dot active" type="button" data-slide="0" aria-label="Ver presentación de alertas" aria-pressed="true"></button><button class="slide-dot" type="button" data-slide="1" aria-label="Ver presentación de familia" aria-pressed="false"></button><button class="slide-dot" type="button" data-slide="2" aria-label="Ver presentación de rutas" aria-pressed="false"></button></div><div class="slide-controls"><button type="button" id="previous-slide" aria-label="Mensaje anterior">Anterior</button><span aria-hidden="true"></span><button type="button" id="next-slide" aria-label="Mensaje siguiente">Siguiente</button></div></div>
-          <p class="sr-only" id="slide-announcement" aria-live="polite"></p>
+    <main id="contenido" tabindex="-1">
+      <nav
+        class="page-navigation container"
+        id="page-navigation"
+        aria-label="Regresar y ubicación actual"
+        hidden
+      >
+        <div class="page-return">
+          <button type="button" id="back-view">Volver</button
+          ><a href="#inicio">Volver al inicio</a>
+        </div>
+        <span id="current-view-label"></span>
+      </nav>
+      <p class="sr-only" id="view-announcement" aria-live="polite"></p>
+      <section
+        class="hero"
+        id="inicio"
+        data-view="inicio"
+        aria-labelledby="hero-title"
+      >
+        <div class="hero-copy">
+          <div class="hero-copy-inner">
+            <span class="eyebrow light">ALERTA COMUNITARIA · SAFEALERT</span>
+            <h1 id="hero-title" tabindex="-1">
+              Una alerta clara.<br />Una comunidad<br /><span
+                >más preparada.</span
+              >
+            </h1>
+            <p id="hero-description">
+              Saber qué ocurre, hacia dónde ir y cómo está tu familia. Una
+              propuesta que reúne lo importante cuando más lo necesitas.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-orange" href="/SafeAlert.html"
+                >SafeAlert</a
+              ><a class="button button-outline" href="#funciones"
+                >Explorar funciones</a
+              >
+            </div>
+            <div class="hero-note">
+              <span class="line-icon" data-icon="shield"></span
+              ><span>Diseñada alrededor de las personas y su comunidad.</span>
+            </div>
+            <div
+              class="hero-carousel"
+              role="group"
+              aria-label="Mensajes de presentación"
+            >
+              <div class="slide-dots">
+                <button
+                  class="slide-dot active"
+                  type="button"
+                  data-slide="0"
+                  aria-label="Ver presentación de alertas"
+                  aria-pressed="true"
+                ></button
+                ><button
+                  class="slide-dot"
+                  type="button"
+                  data-slide="1"
+                  aria-label="Ver presentación de familia"
+                  aria-pressed="false"
+                ></button
+                ><button
+                  class="slide-dot"
+                  type="button"
+                  data-slide="2"
+                  aria-label="Ver presentación de rutas"
+                  aria-pressed="false"
+                ></button>
+              </div>
+              <div class="slide-controls">
+                <button
+                  type="button"
+                  id="previous-slide"
+                  aria-label="Mensaje anterior"
+                >
+                  Anterior</button
+                ><span aria-hidden="true"></span
+                ><button
+                  type="button"
+                  id="next-slide"
+                  aria-label="Mensaje siguiente"
+                >
+                  Siguiente
+                </button>
+              </div>
+            </div>
+            <p class="sr-only" id="slide-announcement" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-caption">
+            <span class="tiny-rule"></span>TECNOLOGÍA CON PROPÓSITO
+          </div>
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="map-decoration" aria-hidden="true">
+            <svg viewBox="0 0 620 620" fill="none">
+              <path
+                d="M30 220H580M30 390H580M200 60V560M420 60V560"
+                stroke="currentColor"
+                stroke-width="24"
+              />
+              <path
+                d="M30 220H580M30 390H580M200 60V560M420 60V560"
+                stroke="#eff6fa"
+                stroke-width="18"
+              />
+              <path
+                d="M110 470H200V220H420V130"
+                stroke="#78b7ae"
+                stroke-width="4"
+                stroke-dasharray="8 7"
+              />
+              <circle cx="110" cy="470" r="10" fill="#6ca7d6" />
+              <circle cx="420" cy="130" r="10" fill="#77bda5" />
+            </svg>
+          </div>
+          <div class="floating-card card-family">
+            <span class="feature-icon mint" data-icon="family"></span>
+            <div>
+              <strong>Cerca de quienes importan</strong
+              ><span>Una red familiar conectada</span>
+            </div>
+          </div>
+          <div class="hero-phone capture-phone">
+            <img
+              id="hero-product-image"
+              src="Images/ALERTAS.png"
+              alt="Captura móvil del centro de alertas de SafeAlert con un aviso y sus indicaciones de ejemplo"
+              width="469"
+              height="936"
+              fetchpriority="high"
+            />
+          </div>
+          <div class="floating-card card-route">
+            <span class="feature-icon sky" data-icon="route"></span>
+            <div>
+              <strong>Un camino más claro</strong
+              ><span>Rutas y refugios en la propuesta</span>
+            </div>
+          </div>
+          <span class="prototype-label"
+            >CAPTURA DEL PROTOTIPO · ESCENARIO ILUSTRATIVO</span
+          >
+        </div>
+      </section>
+
+      <div class="promise-strip" data-view="inicio">
+        <div class="container promise-inner">
+          <div>
+            <span data-icon="bell"></span><span>Información comprensible</span>
+          </div>
+          <div>
+            <span data-icon="route"></span><span>Orientación para actuar</span>
+          </div>
+          <div>
+            <span data-icon="family"></span><span>Bienestar familiar</span>
+          </div>
+          <div>
+            <span data-icon="community"></span
+            ><span>Colaboración comunitaria</span>
+          </div>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="visual-caption"><span class="tiny-rule"></span>TECNOLOGÍA CON PROPÓSITO</div>
-        <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
-        <div class="map-decoration" aria-hidden="true"><svg viewBox="0 0 620 620" fill="none"><path d="M30 220H580M30 390H580M200 60V560M420 60V560" stroke="currentColor" stroke-width="24"/><path d="M30 220H580M30 390H580M200 60V560M420 60V560" stroke="#eff6fa" stroke-width="18"/><path d="M110 470H200V220H420V130" stroke="#78b7ae" stroke-width="4" stroke-dasharray="8 7"/><circle cx="110" cy="470" r="10" fill="#6ca7d6"/><circle cx="420" cy="130" r="10" fill="#77bda5"/></svg></div>
-        <div class="floating-card card-family"><span class="feature-icon mint" data-icon="family"></span><div><strong>Cerca de quienes importan</strong><span>Una red familiar conectada</span></div></div>
-        <div class="hero-phone capture-phone"><img id="hero-product-image" src="Images/ALERTAS.png" alt="Captura móvil del centro de alertas de SafeAlert con un aviso y sus indicaciones de ejemplo" width="469" height="936" fetchpriority="high"></div>
-        <div class="floating-card card-route"><span class="feature-icon sky" data-icon="route"></span><div><strong>Un camino más claro</strong><span>Rutas y refugios en la propuesta</span></div></div>
-        <span class="prototype-label">CAPTURA DEL PROTOTIPO · ESCENARIO ILUSTRATIVO</span>
-      </div>
-    </section>
 
-    <div class="promise-strip" data-view="inicio"><div class="container promise-inner"><div><span data-icon="bell"></span><span>Información comprensible</span></div><div><span data-icon="route"></span><span>Orientación para actuar</span></div><div><span data-icon="family"></span><span>Bienestar familiar</span></div><div><span data-icon="community"></span><span>Colaboración comunitaria</span></div></div></div>
-
-    <section data-view="inicio" class="section problem-section" aria-labelledby="problem-title">
-      <div class="container problem-layout"><div><span class="eyebrow">EL PROBLEMA QUE NOS MUEVE</span><h2 id="problem-title">Recibir un aviso<br>es solo el comienzo.</h2></div><div class="problem-copy"><p>Frente a un huaico, una inundación o un sismo, la incertidumbre puede hacer más difícil decidir. ¿El peligro está cerca? ¿Dónde hay un refugio? ¿Mi familia está bien?</p><p>SafeAlert nace de esas preguntas. Nuestra propuesta busca transformar la información dispersa en una experiencia <strong>clara, cercana y orientada a la acción.</strong></p><a href="#como-funciona" class="text-link">Conoce nuestra propuesta</a></div></div>
-    </section>
-
-    <section class="section features-section" id="funciones" data-view="funciones" aria-labelledby="features-title">
-      <div class="container">
-        <div class="section-heading"><div><span class="eyebrow">LO IMPORTANTE, EN UN SOLO LUGAR</span><h1 class="view-title" id="features-title" tabindex="-1">Pensada para acompañarte.</h1></div><p>Funciones que responden a necesidades identificadas en la investigación con residentes, personas en tránsito y personal de respuesta.</p></div>
-        <div class="product-stories">
-          <article class="feature-story"><div class="story-copy"><span class="feature-icon sky" data-icon="devices"></span><span class="eyebrow">UNA VISTA GENERAL</span><h2>Lo importante,<br>desde el inicio.</h2><p>La propuesta reúne alertas, refugios, estado familiar y reportes para que puedas reconocer qué revisar sin recorrer menús complejos.</p><ul class="check-list"><li>Reconoce el estado de tu zona de referencia.</li><li>Encuentra accesos claros a las acciones principales.</li><li>Consulta la información de tu comunidad en un mismo lugar.</li></ul><a class="text-link" href="#prototipo">Conocer el prototipo</a></div><figure class="story-figure"><button class="capture-button" type="button" data-preview="Images/Vista-General.png" data-preview-title="Vista general de SafeAlert" aria-label="Ampliar captura de la vista general"><img src="Images/Vista-General.png" alt="Pantalla de inicio de SafeAlert con resumen de riesgo, refugios, familiares y reportes" width="466" height="951" loading="lazy"></button><figcaption>Vista general del prototipo</figcaption></figure></article>
-          <article class="feature-story"><div class="story-copy"><span class="feature-icon sky" data-icon="bell"></span><span class="eyebrow">ALERTAS COMPRENSIBLES</span><h2>Un aviso que puedas<br>entender y consultar.</h2><p>Conocer el peligro es el primer paso. SafeAlert plantea avisos por microzona que expliquen el nivel de riesgo y acerquen una indicación concreta.</p><ul class="check-list"><li>Distingue avisos de emergencia y precaución.</li><li>Consulta los detalles del escenario y sus indicaciones.</li><li>Encuentra la información con filtros y búsqueda.</li></ul><p class="story-benefit">Menos dudas al leer el aviso. Más claridad sobre el siguiente paso.</p></div><figure class="story-figure"><button class="capture-button" type="button" data-preview="Images/ALERTAS.png" data-preview-title="Centro de alertas de SafeAlert" aria-label="Ampliar captura de alertas"><img src="Images/ALERTAS.png" alt="Centro de alertas del prototipo con riesgo de huaico, niveles de aviso y filtros" width="469" height="936" loading="lazy"></button><figcaption>Centro de alertas · Escenario de ejemplo</figcaption></figure></article>
-          <article class="feature-story route-story"><div class="story-copy"><span class="feature-icon mint" data-icon="route"></span><span class="eyebrow">DEL MAPA A LAS INDICACIONES</span><h2>Ubica tu camino.<br>Comprende cómo seguirlo.</h2><p>La orientación se presenta en dos partes complementarias: el mapa permite reconocer el recorrido; las indicaciones muestran las distancias y los pasos de la guía.</p><ul class="check-list"><li>Identifica la posición, la ruta y el refugio de referencia.</li><li>Consulta la siguiente indicación y la distancia mostrada.</li><li>Conoce cómo se plantea una alternativa ante bloqueos.</li></ul><p class="story-benefit">Una propuesta pensada también para quienes están en una zona que no conocen.</p></div><div class="route-captures"><figure class="story-figure"><button class="capture-button" type="button" data-preview="Images/Ruta-evacuacion-1.png" data-preview-title="Evacuación: mapa y refugio" aria-label="Ampliar captura del mapa de evacuación"><img src="Images/Ruta-evacuacion-1.png" alt="Mapa ilustrativo de evacuación con posición, zona de riesgo, refugio y recorrido verde" width="488" height="922" loading="lazy"></button><figcaption>El mapa te ubica</figcaption></figure><figure class="story-figure"><button class="capture-button" type="button" data-preview="Images/Ruta-evacuacion-2.png" data-preview-title="Evacuación: pasos y distancias" aria-label="Ampliar captura de pasos y distancias"><img src="Images/Ruta-evacuacion-2.png" alt="Guía de evacuación del prototipo con indicación de 450 metros y pasos del recorrido" width="478" height="972" loading="lazy"></button><figcaption>Los pasos te orientan</figcaption></figure></div></article>
-          <article class="feature-story"><div class="story-copy"><span class="feature-icon peach" data-icon="family"></span><span class="eyebrow">TU RED FAMILIAR</span><h2>Las personas que importan,<br>en un espacio cercano.</h2><p>En una emergencia, la preocupación también está en saber de los tuyos. El diseño propone una red de contactos y estados familiares fácil de consultar.</p><ul class="check-list"><li>Organiza a tus contactos de confianza.</li><li>Reconoce el estado mostrado para cada familiar.</li><li>Conoce la propuesta de comunicar “Estoy a salvo”.</li></ul><p class="story-benefit">La tranquilidad familiar forma parte de la experiencia que queremos construir.</p></div><figure class="story-figure"><button class="capture-button" type="button" data-preview="Images/Familiares.png" data-preview-title="Red familiar de SafeAlert" aria-label="Ampliar captura de familiares"><img src="Images/Familiares.png" alt="Pantalla de la red familiar del prototipo con contactos y sus estados de ejemplo" width="525" height="954" loading="lazy"></button><figcaption>Red familiar · Datos ilustrativos</figcaption></figure></article>
-          <article class="feature-story"><div class="story-copy"><span class="feature-icon lavender" data-icon="report"></span><span class="eyebrow">PARTICIPACIÓN DE LA COMUNIDAD</span><h2>Lo que observas puede<br>convertirse en información útil.</h2><p>SafeAlert plantea un reporte organizado para describir incidentes, señalar su ubicación de referencia y facilitar su posterior revisión.</p><ul class="check-list"><li>Selecciona el tipo de incidente.</li><li>Describe qué ocurre y dónde lo observas.</li><li>Consulta el estado de verificación del reporte.</li></ul><p class="story-benefit">Una comunidad que participa necesita canales claros para compartir información.</p></div><figure class="story-figure"><button class="capture-button" type="button" data-preview="Images/Reporte-Incidente.png" data-preview-title="Reporte de incidentes en SafeAlert" aria-label="Ampliar captura del formulario de incidentes"><img src="Images/Reporte-Incidente.png" alt="Formulario del prototipo para indicar tipo de incidente, ubicación, descripción y evidencia" width="529" height="943" loading="lazy"></button><figcaption>Formulario de reporte del prototipo</figcaption></figure></article>
-          <article class="feature-story"><div class="story-copy"><span class="feature-icon mint" data-icon="shield"></span><span class="eyebrow">REVISIÓN Y COORDINACIÓN</span><h2>La comunidad informa.<br>El equipo revisa.</h2><p>La experiencia de Serenazgo propone organizar reportes y distinguir sus estados para apoyar la revisión de la información antes de actuar.</p><ul class="check-list"><li>Consulta los incidentes registrados.</li><li>Diferencia reportes sin verificar y verificados.</li><li>Conoce el cambio de estado durante la atención.</li></ul><a class="text-link" href="#para-quien">Conocer los públicos de SafeAlert</a></div><figure class="story-figure"><button class="capture-button" type="button" data-preview="Images/Panel-serenazgo ConfirmandoReportes.png" data-preview-title="Revisión de reportes: Serenazgo" aria-label="Ampliar captura de la revisión de reportes"><img src="Images/Panel-serenazgo ConfirmandoReportes.png" alt="Captura del prototipo de Serenazgo mostrando reportes y un selector de estado de atención" width="517" height="980" loading="lazy"></button><figcaption>Serenazgo · Revisión de reportes de ejemplo</figcaption></figure></article>
+      <section
+        data-view="inicio"
+        class="section problem-section"
+        aria-labelledby="problem-title"
+      >
+        <div class="container problem-layout">
+          <div>
+            <span class="eyebrow">EL PROBLEMA QUE NOS MUEVE</span>
+            <h2 id="problem-title">
+              Recibir un aviso<br />es solo el comienzo.
+            </h2>
+          </div>
+          <div class="problem-copy">
+            <p>
+              Frente a un huaico, una inundación o un sismo, la incertidumbre
+              puede hacer más difícil decidir. ¿El peligro está cerca? ¿Dónde
+              hay un refugio? ¿Mi familia está bien?
+            </p>
+            <p>
+              SafeAlert nace de esas preguntas. Nuestra propuesta busca
+              transformar la información dispersa en una experiencia
+              <strong>clara, cercana y orientada a la acción.</strong>
+            </p>
+            <a href="#como-funciona" class="text-link"
+              >Conoce nuestra propuesta</a
+            >
+          </div>
         </div>
-        <p class="section-footnote">SafeAlert es un proyecto académico en fase de prototipo. Estas son las capacidades planteadas para la solución.</p>
+      </section>
+
+      <section
+        class="section features-section"
+        id="funciones"
+        data-view="funciones"
+        aria-labelledby="features-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">LO IMPORTANTE, EN UN SOLO LUGAR</span>
+              <h1 class="view-title" id="features-title" tabindex="-1">
+                Pensada para acompañarte.
+              </h1>
+            </div>
+            <p>
+              Funciones que responden a necesidades identificadas en la
+              investigación con residentes, personas en tránsito y personal de
+              respuesta.
+            </p>
+          </div>
+          <div class="product-stories">
+            <article class="feature-story">
+              <div class="story-copy">
+                <span class="feature-icon sky" data-icon="devices"></span
+                ><span class="eyebrow">UNA VISTA GENERAL</span>
+                <h2>Lo importante,<br />desde el inicio.</h2>
+                <p>
+                  La propuesta reúne alertas, refugios, estado familiar y
+                  reportes para que puedas reconocer qué revisar sin recorrer
+                  menús complejos.
+                </p>
+                <ul class="check-list">
+                  <li>Reconoce el estado de tu zona de referencia.</li>
+                  <li>Encuentra accesos claros a las acciones principales.</li>
+                  <li>
+                    Consulta la información de tu comunidad en un mismo lugar.
+                  </li>
+                </ul>
+                <a class="text-link" href="#prototipo">Conocer el prototipo</a>
+              </div>
+              <figure class="story-figure">
+                <button
+                  class="capture-button"
+                  type="button"
+                  data-preview="Images/Vista-General.png"
+                  data-preview-title="Vista general de SafeAlert"
+                  aria-label="Ampliar captura de la vista general"
+                >
+                  <img
+                    src="Images/Vista-General.png"
+                    alt="Pantalla de inicio de SafeAlert con resumen de riesgo, refugios, familiares y reportes"
+                    width="466"
+                    height="951"
+                    loading="lazy"
+                  />
+                </button>
+                <figcaption>Vista general del prototipo</figcaption>
+              </figure>
+            </article>
+            <article class="feature-story">
+              <div class="story-copy">
+                <span class="feature-icon sky" data-icon="bell"></span
+                ><span class="eyebrow">ALERTAS COMPRENSIBLES</span>
+                <h2>Un aviso que puedas<br />entender y consultar.</h2>
+                <p>
+                  Conocer el peligro es el primer paso. SafeAlert plantea avisos
+                  por microzona que expliquen el nivel de riesgo y acerquen una
+                  indicación concreta.
+                </p>
+                <ul class="check-list">
+                  <li>Distingue avisos de emergencia y precaución.</li>
+                  <li>
+                    Consulta los detalles del escenario y sus indicaciones.
+                  </li>
+                  <li>Encuentra la información con filtros y búsqueda.</li>
+                </ul>
+                <p class="story-benefit">
+                  Menos dudas al leer el aviso. Más claridad sobre el siguiente
+                  paso.
+                </p>
+              </div>
+              <figure class="story-figure">
+                <button
+                  class="capture-button"
+                  type="button"
+                  data-preview="Images/ALERTAS.png"
+                  data-preview-title="Centro de alertas de SafeAlert"
+                  aria-label="Ampliar captura de alertas"
+                >
+                  <img
+                    src="Images/ALERTAS.png"
+                    alt="Centro de alertas del prototipo con riesgo de huaico, niveles de aviso y filtros"
+                    width="469"
+                    height="936"
+                    loading="lazy"
+                  />
+                </button>
+                <figcaption>
+                  Centro de alertas · Escenario de ejemplo
+                </figcaption>
+              </figure>
+            </article>
+            <article class="feature-story route-story">
+              <div class="story-copy">
+                <span class="feature-icon mint" data-icon="route"></span
+                ><span class="eyebrow">DEL MAPA A LAS INDICACIONES</span>
+                <h2>Ubica tu camino.<br />Comprende cómo seguirlo.</h2>
+                <p>
+                  La orientación se presenta en dos partes complementarias: el
+                  mapa permite reconocer el recorrido; las indicaciones muestran
+                  las distancias y los pasos de la guía.
+                </p>
+                <ul class="check-list">
+                  <li>
+                    Identifica la posición, la ruta y el refugio de referencia.
+                  </li>
+                  <li>
+                    Consulta la siguiente indicación y la distancia mostrada.
+                  </li>
+                  <li>Conoce cómo se plantea una alternativa ante bloqueos.</li>
+                </ul>
+                <p class="story-benefit">
+                  Una propuesta pensada también para quienes están en una zona
+                  que no conocen.
+                </p>
+              </div>
+              <div class="route-captures">
+                <figure class="story-figure">
+                  <button
+                    class="capture-button"
+                    type="button"
+                    data-preview="Images/Ruta-evacuacion-1.png"
+                    data-preview-title="Evacuación: mapa y refugio"
+                    aria-label="Ampliar captura del mapa de evacuación"
+                  >
+                    <img
+                      src="Images/Ruta-evacuacion-1.png"
+                      alt="Mapa ilustrativo de evacuación con posición, zona de riesgo, refugio y recorrido verde"
+                      width="488"
+                      height="922"
+                      loading="lazy"
+                    />
+                  </button>
+                  <figcaption>El mapa te ubica</figcaption>
+                </figure>
+                <figure class="story-figure">
+                  <button
+                    class="capture-button"
+                    type="button"
+                    data-preview="Images/Ruta-evacuacion-2.png"
+                    data-preview-title="Evacuación: pasos y distancias"
+                    aria-label="Ampliar captura de pasos y distancias"
+                  >
+                    <img
+                      src="Images/Ruta-evacuacion-2.png"
+                      alt="Guía de evacuación del prototipo con indicación de 450 metros y pasos del recorrido"
+                      width="478"
+                      height="972"
+                      loading="lazy"
+                    />
+                  </button>
+                  <figcaption>Los pasos te orientan</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="feature-story">
+              <div class="story-copy">
+                <span class="feature-icon peach" data-icon="family"></span
+                ><span class="eyebrow">TU RED FAMILIAR</span>
+                <h2>Las personas que importan,<br />en un espacio cercano.</h2>
+                <p>
+                  En una emergencia, la preocupación también está en saber de
+                  los tuyos. El diseño propone una red de contactos y estados
+                  familiares fácil de consultar.
+                </p>
+                <ul class="check-list">
+                  <li>Organiza a tus contactos de confianza.</li>
+                  <li>Reconoce el estado mostrado para cada familiar.</li>
+                  <li>Conoce la propuesta de comunicar “Estoy a salvo”.</li>
+                </ul>
+                <p class="story-benefit">
+                  La tranquilidad familiar forma parte de la experiencia que
+                  queremos construir.
+                </p>
+              </div>
+              <figure class="story-figure">
+                <button
+                  class="capture-button"
+                  type="button"
+                  data-preview="Images/Familiares.png"
+                  data-preview-title="Red familiar de SafeAlert"
+                  aria-label="Ampliar captura de familiares"
+                >
+                  <img
+                    src="Images/Familiares.png"
+                    alt="Pantalla de la red familiar del prototipo con contactos y sus estados de ejemplo"
+                    width="525"
+                    height="954"
+                    loading="lazy"
+                  />
+                </button>
+                <figcaption>Red familiar · Datos ilustrativos</figcaption>
+              </figure>
+            </article>
+            <article class="feature-story">
+              <div class="story-copy">
+                <span class="feature-icon lavender" data-icon="report"></span
+                ><span class="eyebrow">PARTICIPACIÓN DE LA COMUNIDAD</span>
+                <h2>
+                  Lo que observas puede<br />convertirse en información útil.
+                </h2>
+                <p>
+                  SafeAlert plantea un reporte organizado para describir
+                  incidentes, señalar su ubicación de referencia y facilitar su
+                  posterior revisión.
+                </p>
+                <ul class="check-list">
+                  <li>Selecciona el tipo de incidente.</li>
+                  <li>Describe qué ocurre y dónde lo observas.</li>
+                  <li>Consulta el estado de verificación del reporte.</li>
+                </ul>
+                <p class="story-benefit">
+                  Una comunidad que participa necesita canales claros para
+                  compartir información.
+                </p>
+              </div>
+              <figure class="story-figure">
+                <button
+                  class="capture-button"
+                  type="button"
+                  data-preview="Images/Reporte-Incidente.png"
+                  data-preview-title="Reporte de incidentes en SafeAlert"
+                  aria-label="Ampliar captura del formulario de incidentes"
+                >
+                  <img
+                    src="Images/Reporte-Incidente.png"
+                    alt="Formulario del prototipo para indicar tipo de incidente, ubicación, descripción y evidencia"
+                    width="529"
+                    height="943"
+                    loading="lazy"
+                  />
+                </button>
+                <figcaption>Formulario de reporte del prototipo</figcaption>
+              </figure>
+            </article>
+            <article class="feature-story">
+              <div class="story-copy">
+                <span class="feature-icon mint" data-icon="shield"></span
+                ><span class="eyebrow">REVISIÓN Y COORDINACIÓN</span>
+                <h2>La comunidad informa.<br />El equipo revisa.</h2>
+                <p>
+                  La experiencia de Serenazgo propone organizar reportes y
+                  distinguir sus estados para apoyar la revisión de la
+                  información antes de actuar.
+                </p>
+                <ul class="check-list">
+                  <li>Consulta los incidentes registrados.</li>
+                  <li>Diferencia reportes sin verificar y verificados.</li>
+                  <li>Conoce el cambio de estado durante la atención.</li>
+                </ul>
+                <a class="text-link" href="#para-quien"
+                  >Conocer los públicos de SafeAlert</a
+                >
+              </div>
+              <figure class="story-figure">
+                <button
+                  class="capture-button"
+                  type="button"
+                  data-preview="Images/Panel-serenazgo ConfirmandoReportes.png"
+                  data-preview-title="Revisión de reportes: Serenazgo"
+                  aria-label="Ampliar captura de la revisión de reportes"
+                >
+                  <img
+                    src="Images/Panel-serenazgo ConfirmandoReportes.png"
+                    alt="Captura del prototipo de Serenazgo mostrando reportes y un selector de estado de atención"
+                    width="517"
+                    height="980"
+                    loading="lazy"
+                  />
+                </button>
+                <figcaption>
+                  Serenazgo · Revisión de reportes de ejemplo
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+          <p class="section-footnote">
+            SafeAlert es un proyecto académico en fase de prototipo. Estas son
+            las capacidades planteadas para la solución.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="section audience-section"
+        id="para-quien"
+        data-view="para-quien"
+        aria-labelledby="audience-title"
+      >
+        <div class="container">
+          <div class="section-heading centered">
+            <span class="eyebrow"
+              >DISTINTAS NECESIDADES. UNA MISMA COMUNIDAD.</span
+            >
+            <h1 class="view-title" id="audience-title" tabindex="-1">
+              Una propuesta que te tiene en cuenta.
+            </h1>
+            <p>
+              La seguridad se construye conectando a quienes viven, transitan y
+              cuidan una zona.
+            </p>
+          </div>
+          <div
+            class="audience-tabs"
+            role="tablist"
+            aria-label="Públicos de SafeAlert"
+          >
+            <button
+              type="button"
+              role="tab"
+              id="tab-familias"
+              aria-controls="panel-familias"
+              aria-selected="true"
+              tabindex="0"
+              data-audience="familias"
+            >
+              <span data-icon="home"></span>Familias y residentes</button
+            ><button
+              type="button"
+              role="tab"
+              id="tab-visitantes"
+              aria-controls="panel-visitantes"
+              aria-selected="false"
+              tabindex="-1"
+              data-audience="visitantes"
+            >
+              <span data-icon="compass"></span>Personas en tránsito</button
+            ><button
+              type="button"
+              role="tab"
+              id="tab-instituciones"
+              aria-controls="panel-instituciones"
+              aria-selected="false"
+              tabindex="-1"
+              data-audience="instituciones"
+            >
+              <span data-icon="shield"></span>Serenazgo y Defensa Civil
+            </button>
+          </div>
+          <div
+            class="audience-panel"
+            role="tabpanel"
+            id="panel-familias"
+            aria-labelledby="tab-familias"
+            tabindex="0"
+          >
+            <div class="audience-copy">
+              <span class="eyebrow"
+                >PARA QUIENES LLAMAN HOGAR A SU COMUNIDAD</span
+              >
+              <h3>
+                Más claridad para ti.<br />Más tranquilidad para tu familia.
+              </h3>
+              <p>
+                Cuando una emergencia afecta tu entorno, necesitas información
+                cercana y un camino claro para cuidar a los tuyos.
+              </p>
+              <ul class="check-list">
+                <li>Comprende los avisos de tu microzona.</li>
+                <li>Identifica rutas y refugios de referencia.</li>
+                <li>Conoce la propuesta de estados familiares.</li>
+              </ul>
+              <a class="text-link" href="#contacto">Me interesa SafeAlert</a>
+            </div>
+            <div class="audience-visual capture-board">
+              <span class="image-label">CAPTURA DEL PROTOTIPO · FAMILIARES</span
+              ><img
+                src="Images/Familiares.png"
+                alt="Red familiar del prototipo con contactos de confianza"
+                width="525"
+                height="954"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="audience-panel"
+            role="tabpanel"
+            id="panel-visitantes"
+            aria-labelledby="tab-visitantes"
+            tabindex="0"
+            hidden
+          >
+            <div class="audience-copy">
+              <span class="eyebrow">PARA QUIENES ESTÁN DE PASO</span>
+              <h3>
+                No conocer la zona<br />no debería dejarte sin orientación.
+              </h3>
+              <p>
+                Trabajadores, comerciantes, conductores y visitantes también
+                necesitan saber hacia dónde dirigirse cuando ocurre una
+                emergencia.
+              </p>
+              <ul class="check-list">
+                <li>Identifica el recorrido hacia un refugio.</li>
+                <li>Ubícate con referencias visuales sencillas.</li>
+                <li>Conoce las alternativas previstas ante bloqueos.</li>
+              </ul>
+              <a class="text-link" href="#contacto">Quiero saber más</a>
+            </div>
+            <div class="audience-visual capture-board">
+              <span class="image-label">CAPTURA DEL PROTOTIPO · EVACUACIÓN</span
+              ><img
+                src="Images/Ruta-evacuacion-1.png"
+                alt="Mapa del recorrido de evacuación de ejemplo"
+                width="488"
+                height="922"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="audience-panel"
+            role="tabpanel"
+            id="panel-instituciones"
+            aria-labelledby="tab-instituciones"
+            tabindex="0"
+            hidden
+          >
+            <div class="audience-copy">
+              <span class="eyebrow">PARA QUIENES COORDINAN LA RESPUESTA</span>
+              <h3>
+                Información organizada.<br />Una respuesta mejor coordinada.
+              </h3>
+              <p>
+                La propuesta reúne reportes ciudadanos para apoyar su revisión y
+                el seguimiento de la atención.
+              </p>
+              <ul class="check-list">
+                <li>Revisa reportes por estado de verificación.</li>
+                <li>Consulta su tipo y ubicación de referencia.</li>
+                <li>Distingue incidentes pendientes y resueltos.</li>
+              </ul>
+              <a class="text-link" href="#contacto"
+                >Conocer la propuesta institucional</a
+              >
+            </div>
+            <div class="audience-visual capture-board">
+              <span class="image-label">CAPTURA DEL PROTOTIPO · SERENAZGO</span
+              ><img
+                src="Images/Panel-serenazgo ConfirmandoReportes.png"
+                alt="Revisión de reportes del prototipo con opciones para actualizar su estado"
+                width="517"
+                height="980"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section how-section"
+        id="como-funciona"
+        data-view="como-funciona"
+        aria-labelledby="how-title"
+      >
+        <div class="container">
+          <div class="section-heading centered">
+            <span class="eyebrow">DEL AVISO A UNA ACCIÓN COMPRENSIBLE</span>
+            <h1 class="view-title" id="how-title" tabindex="-1">
+              Recibe. Comprende. Actúa.
+            </h1>
+            <p>
+              Así plantea SafeAlert una experiencia con menos dudas y más
+              orientación.
+            </p>
+          </div>
+          <div class="steps-grid">
+            <article>
+              <span class="step-icon" data-icon="bell"></span>
+              <h3>Recibe información cercana</h3>
+              <p>
+                La propuesta comienza con una alerta vinculada a tu zona y al
+                contexto de la emergencia.
+              </p>
+            </article>
+            <article>
+              <span class="step-icon" data-icon="message"></span>
+              <h3>Comprende qué sucede</h3>
+              <p>
+                Consulta el nivel de riesgo y la indicación sugerida en un
+                lenguaje sencillo, con apoyo visual.
+              </p>
+            </article>
+            <article>
+              <span class="step-icon" data-icon="route"></span>
+              <h3>Encuentra el siguiente paso</h3>
+              <p>
+                Explora la ruta de evacuación, identifica el refugio y conoce
+                cómo comunicar tu estado familiar.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section prototype-section"
+        id="prototipo"
+        data-view="prototipo"
+        aria-labelledby="prototype-title"
+      >
+        <div class="container prototype-layout">
+          <div class="prototype-copy">
+            <span class="eyebrow">DEL DISEÑO A LA EXPERIENCIA</span>
+            <h1 class="view-title" id="prototype-title" tabindex="-1">
+              Conoce SafeAlert<br />más de cerca.
+            </h1>
+            <p>
+              Las capturas muestran el prototipo del equipo. Puedes conocer sus
+              pantallas en la vista de funciones o abrir la demostración para
+              explorar la experiencia.
+            </p>
+            <div class="prototype-links">
+              <a class="button" href="#funciones">Explorar las capturas</a
+              ><a
+                class="text-link"
+                href="../SafeAlert/index.html"
+                target="_blank"
+                rel="noopener"
+                >Abrir prototipo de escritorio</a
+              >
+            </div>
+            <p class="small-note">
+              La demostración de escritorio se abre por separado. Sus datos y
+              recorridos son ilustrativos.
+            </p>
+          </div>
+          <div class="mobile-showcase capture-board">
+            <div class="showcase-top">
+              <span>EL PROTOTIPO DEL EQUIPO</span><span>WEB + MÓVIL</span>
+            </div>
+            <button
+              class="preview-image"
+              type="button"
+              data-preview="Images/Vista-General.png"
+              data-preview-title="Vista general de SafeAlert"
+              aria-label="Ampliar la vista general del prototipo"
+            >
+              <img
+                src="Images/Vista-General.png"
+                alt="Captura del inicio del prototipo con información de la zona y accesos a sus funciones"
+                width="466"
+                height="951"
+                loading="lazy"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section about-section"
+        id="nosotros"
+        data-view="nosotros"
+        aria-labelledby="about-title"
+      >
+        <div class="container about-layout">
+          <div>
+            <span class="eyebrow">DETRÁS DE SAFEALERT</span>
+            <h1 class="view-title" id="about-title" tabindex="-1">
+              Un equipo.<br />Una idea en común.
+            </h1>
+            <p>
+              Somos estudiantes de Ingeniería de Software e Ingeniería de
+              Sistemas de Información de la UPC. Desarrollamos SafeAlert como
+              proyecto del curso HCI for UX Design.
+            </p>
+            <p>
+              Investigamos necesidades de las personas para diseñar una
+              propuesta de alerta comunitaria más comprensible, accesible y
+              cercana al contexto de Lima.
+            </p>
+          </div>
+          <div class="team-panel">
+            <span class="eyebrow">EL EQUIPO</span>
+            <ul class="team-list">
+              <li><span>DA</span>Diego Arredondo</li>
+              <li><span>MC</span>Micael Catay</li>
+              <li><span>JD</span>José Camilo Dulanto</li>
+              <li><span>NF</span>Nicolás Fuentes</li>
+              <li><span>CJ</span>Carlos Jaulis</li>
+              <li><span>SM</span>Sebastián Martínez</li>
+            </ul>
+            <p>Investigación de usuarios · Diseño UX/UI · Prototipado</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section faq-section"
+        id="preguntas"
+        data-view="preguntas"
+        aria-labelledby="faq-title"
+      >
+        <div class="container faq-layout">
+          <div>
+            <span class="eyebrow">RESOLVAMOS TUS DUDAS</span>
+            <h1 class="view-title" id="faq-title" tabindex="-1">
+              Antes de dar<br />el siguiente paso.
+            </h1>
+            <p>Conoce el propósito y el estado actual de SafeAlert.</p>
+            <a href="#contacto" class="text-link">Tengo otra consulta</a>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>
+                ¿Qué es SafeAlert?<span aria-hidden="true"></span>
+              </summary>
+              <p>
+                Es una propuesta de sistema de alerta comunitaria geolocalizada.
+                Busca reunir avisos comprensibles, orientación de evacuación y
+                herramientas de comunicación familiar para residentes, población
+                flotante y equipos de respuesta.
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿SafeAlert ya está disponible para descargar?<span
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <p>
+                El proyecto se encuentra en fase de prototipo académico. Puedes
+                conocer sus diseños y explorar una demostración de escritorio.
+                Esta página no ofrece una aplicación final para descargar.
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿Para quién está pensada la propuesta?<span
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <p>
+                Para familias que viven en zonas de riesgo, personas que
+                trabajan o transitan por lugares poco conocidos y personal de
+                Serenazgo, Defensa Civil o centros de operaciones de emergencia.
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿Cómo se plantea su uso con poca conexión?<span
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <p>
+                El diseño contempla información esencial y mapas precargados
+                para reducir la dependencia de datos móviles. La navegación
+                offline real y la sincronización con autoridades son capacidades
+                planteadas que requieren desarrollo y validación.
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿Esta página emite alertas reales o solicita rescates?<span
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <p>
+                No. Esta landing presenta el proyecto y sus prototipos. No está
+                conectada a sistemas oficiales de alertas ni a servicios de
+                emergencia. Las pantallas muestran escenarios ilustrativos.
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿Cómo puedo conocer más del proyecto?<span
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <p>
+                Revisa sus funciones, explora las pantallas del prototipo y
+                utiliza el formulario de demostración de esta página para probar
+                una solicitud de información. El formulario valida tus datos,
+                pero no realiza un envío real.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section contact-section"
+        id="contacto"
+        data-view="contacto"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact-layout">
+          <div class="contact-copy">
+            <span class="eyebrow light">EL PRIMER PASO ES CONOCERNOS</span>
+            <h1 class="view-title" id="contact-title" tabindex="-1">
+              Una comunidad<br />más preparada<br /><span
+                >empieza contigo.</span
+              >
+            </h1>
+            <p>
+              ¿Te interesa la propuesta para tu familia, tu comunidad o tu
+              institución? Cuéntanos qué te gustaría conocer de SafeAlert.
+            </p>
+            <div class="contact-points">
+              <span
+                ><span data-icon="shield"></span>Una propuesta centrada en las
+                personas</span
+              ><span
+                ><span data-icon="community"></span>Construida desde la
+                investigación de usuarios</span
+              ><span
+                ><span data-icon="devices"></span>Diseño para escritorio y
+                móvil</span
+              >
+            </div>
+          </div>
+          <div class="contact-card">
+            <form id="contact-form" novalidate>
+              <h3>Conoce más de SafeAlert</h3>
+              <p class="form-intro">
+                Completa tu solicitud de información.<br /><span
+                  >Los campos con * son obligatorios.</span
+                >
+              </p>
+              <div class="form-fields">
+                <div class="field">
+                  <label for="contact-name">Nombre completo *</label
+                  ><input
+                    id="contact-name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    maxlength="80"
+                    placeholder="Escribe tu nombre"
+                    required
+                    aria-describedby="name-error"
+                  /><span class="field-error" id="name-error" hidden></span>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="contact-email">Correo electrónico *</label
+                    ><input
+                      id="contact-email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      maxlength="120"
+                      placeholder="nombre@correo.com"
+                      required
+                      aria-describedby="email-error"
+                    /><span class="field-error" id="email-error" hidden></span>
+                  </div>
+                  <div class="field">
+                    <label for="contact-phone">Celular *</label
+                    ><input
+                      id="contact-phone"
+                      name="phone"
+                      type="tel"
+                      autocomplete="tel"
+                      inputmode="tel"
+                      maxlength="20"
+                      placeholder="Ej. 987 654 321"
+                      required
+                      aria-describedby="phone-error"
+                    /><span class="field-error" id="phone-error" hidden></span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="contact-message"
+                    >¿Qué te gustaría conocer? *</label
+                  ><textarea
+                    id="contact-message"
+                    name="message"
+                    rows="3"
+                    minlength="10"
+                    maxlength="800"
+                    placeholder="Cuéntanos sobre tu interés en el proyecto…"
+                    required
+                    aria-describedby="message-error"
+                  ></textarea
+                  ><span class="field-error" id="message-error" hidden></span>
+                </div>
+                <button
+                  class="button button-orange submit-button"
+                  type="submit"
+                >
+                  Enviar solicitud de ejemplo
+                </button>
+                <p class="form-note">
+                  Formulario de demostración: valida la información y muestra
+                  una confirmación. No envía ni almacena tus datos.
+                </p>
+              </div>
+              <p class="sr-only" id="form-status" role="status"></p>
+            </form>
+            <div class="form-success" id="form-success" tabindex="-1" hidden>
+              <span class="success-icon" data-icon="check"></span
+              ><span class="eyebrow">SOLICITUD DE EJEMPLO VALIDADA</span>
+              <h3>¡Gracias, <span id="success-name"></span>!</h3>
+              <p>Completaste correctamente el formulario de SafeAlert.</p>
+              <p class="small-note">
+                Esta fue una demostración. No se enviaron ni almacenaron datos y
+                no recibirás un correo de respuesta.
+              </p>
+              <button class="button" type="button" id="new-request">
+                Volver al formulario
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a class="brand" href="#inicio"
+          ><img src="assets/safealert.svg" width="38" height="42" alt="" /><span
+            >SafeAlert<small>PREPARADOS, JUNTOS</small></span
+          ></a
+        >
+        <p>Información clara.<br />Una comunidad más cerca.</p>
+        <nav aria-label="Navegación del pie de página">
+          <a href="#funciones">Funciones</a><a href="#nosotros">Nosotros</a
+          ><a href="#contacto">Contacto</a
+          ><a href="#inicio">Volver al inicio</a>
+        </nav>
       </div>
-    </section>
-
-    <section class="section audience-section" id="para-quien" data-view="para-quien" aria-labelledby="audience-title">
-      <div class="container"><div class="section-heading centered"><span class="eyebrow">DISTINTAS NECESIDADES. UNA MISMA COMUNIDAD.</span><h1 class="view-title" id="audience-title" tabindex="-1">Una propuesta que te tiene en cuenta.</h1><p>La seguridad se construye conectando a quienes viven, transitan y cuidan una zona.</p></div>
-        <div class="audience-tabs" role="tablist" aria-label="Públicos de SafeAlert"><button type="button" role="tab" id="tab-familias" aria-controls="panel-familias" aria-selected="true" tabindex="0" data-audience="familias"><span data-icon="home"></span>Familias y residentes</button><button type="button" role="tab" id="tab-visitantes" aria-controls="panel-visitantes" aria-selected="false" tabindex="-1" data-audience="visitantes"><span data-icon="compass"></span>Personas en tránsito</button><button type="button" role="tab" id="tab-instituciones" aria-controls="panel-instituciones" aria-selected="false" tabindex="-1" data-audience="instituciones"><span data-icon="shield"></span>Serenazgo y Defensa Civil</button></div>
-        <div class="audience-panel" role="tabpanel" id="panel-familias" aria-labelledby="tab-familias" tabindex="0"><div class="audience-copy"><span class="eyebrow">PARA QUIENES LLAMAN HOGAR A SU COMUNIDAD</span><h3>Más claridad para ti.<br>Más tranquilidad para tu familia.</h3><p>Cuando una emergencia afecta tu entorno, necesitas información cercana y un camino claro para cuidar a los tuyos.</p><ul class="check-list"><li>Comprende los avisos de tu microzona.</li><li>Identifica rutas y refugios de referencia.</li><li>Conoce la propuesta de estados familiares.</li></ul><a class="text-link" href="#contacto">Me interesa SafeAlert</a></div><div class="audience-visual capture-board"><span class="image-label">CAPTURA DEL PROTOTIPO · FAMILIARES</span><img src="Images/Familiares.png" alt="Red familiar del prototipo con contactos de confianza" width="525" height="954" loading="lazy"></div></div>
-        <div class="audience-panel" role="tabpanel" id="panel-visitantes" aria-labelledby="tab-visitantes" tabindex="0" hidden><div class="audience-copy"><span class="eyebrow">PARA QUIENES ESTÁN DE PASO</span><h3>No conocer la zona<br>no debería dejarte sin orientación.</h3><p>Trabajadores, comerciantes, conductores y visitantes también necesitan saber hacia dónde dirigirse cuando ocurre una emergencia.</p><ul class="check-list"><li>Identifica el recorrido hacia un refugio.</li><li>Ubícate con referencias visuales sencillas.</li><li>Conoce las alternativas previstas ante bloqueos.</li></ul><a class="text-link" href="#contacto">Quiero saber más</a></div><div class="audience-visual capture-board"><span class="image-label">CAPTURA DEL PROTOTIPO · EVACUACIÓN</span><img src="Images/Ruta-evacuacion-1.png" alt="Mapa del recorrido de evacuación de ejemplo" width="488" height="922" loading="lazy"></div></div>
-        <div class="audience-panel" role="tabpanel" id="panel-instituciones" aria-labelledby="tab-instituciones" tabindex="0" hidden><div class="audience-copy"><span class="eyebrow">PARA QUIENES COORDINAN LA RESPUESTA</span><h3>Información organizada.<br>Una respuesta mejor coordinada.</h3><p>La propuesta reúne reportes ciudadanos para apoyar su revisión y el seguimiento de la atención.</p><ul class="check-list"><li>Revisa reportes por estado de verificación.</li><li>Consulta su tipo y ubicación de referencia.</li><li>Distingue incidentes pendientes y resueltos.</li></ul><a class="text-link" href="#contacto">Conocer la propuesta institucional</a></div><div class="audience-visual capture-board"><span class="image-label">CAPTURA DEL PROTOTIPO · SERENAZGO</span><img src="Images/Panel-serenazgo ConfirmandoReportes.png" alt="Revisión de reportes del prototipo con opciones para actualizar su estado" width="517" height="980" loading="lazy"></div></div>
+      <div class="container footer-bottom">
+        <span>© 2026 SafeAlert · Proyecto académico de HCI</span
+        ><span>Prototipo en desarrollo · Lima, Perú</span>
       </div>
-    </section>
-
-    <section class="section how-section" id="como-funciona" data-view="como-funciona" aria-labelledby="how-title"><div class="container"><div class="section-heading centered"><span class="eyebrow">DEL AVISO A UNA ACCIÓN COMPRENSIBLE</span><h1 class="view-title" id="how-title" tabindex="-1">Recibe. Comprende. Actúa.</h1><p>Así plantea SafeAlert una experiencia con menos dudas y más orientación.</p></div><div class="steps-grid"><article><span class="step-icon" data-icon="bell"></span><h3>Recibe información cercana</h3><p>La propuesta comienza con una alerta vinculada a tu zona y al contexto de la emergencia.</p></article><article><span class="step-icon" data-icon="message"></span><h3>Comprende qué sucede</h3><p>Consulta el nivel de riesgo y la indicación sugerida en un lenguaje sencillo, con apoyo visual.</p></article><article><span class="step-icon" data-icon="route"></span><h3>Encuentra el siguiente paso</h3><p>Explora la ruta de evacuación, identifica el refugio y conoce cómo comunicar tu estado familiar.</p></article></div></div></section>
-
-    <section class="section prototype-section" id="prototipo" data-view="prototipo" aria-labelledby="prototype-title"><div class="container prototype-layout"><div class="prototype-copy"><span class="eyebrow">DEL DISEÑO A LA EXPERIENCIA</span><h1 class="view-title" id="prototype-title" tabindex="-1">Conoce SafeAlert<br>más de cerca.</h1><p>Las capturas muestran el prototipo del equipo. Puedes conocer sus pantallas en la vista de funciones o abrir la demostración para explorar la experiencia.</p><div class="prototype-links"><a class="button" href="#funciones">Explorar las capturas</a><a class="text-link" href="../SafeAlert/index.html" target="_blank" rel="noopener">Abrir prototipo de escritorio</a></div><p class="small-note">La demostración de escritorio se abre por separado. Sus datos y recorridos son ilustrativos.</p></div><div class="mobile-showcase capture-board"><div class="showcase-top"><span>EL PROTOTIPO DEL EQUIPO</span><span>WEB + MÓVIL</span></div><button class="preview-image" type="button" data-preview="Images/Vista-General.png" data-preview-title="Vista general de SafeAlert" aria-label="Ampliar la vista general del prototipo"><img src="Images/Vista-General.png" alt="Captura del inicio del prototipo con información de la zona y accesos a sus funciones" width="466" height="951" loading="lazy"></button></div></div></section>
-
-    <section class="section about-section" id="nosotros" data-view="nosotros" aria-labelledby="about-title"><div class="container about-layout"><div><span class="eyebrow">DETRÁS DE SAFEALERT</span><h1 class="view-title" id="about-title" tabindex="-1">Un equipo.<br>Una idea en común.</h1><p>Somos estudiantes de Ingeniería de Software e Ingeniería de Sistemas de Información de la UPC. Desarrollamos SafeAlert como proyecto del curso HCI for UX Design.</p><p>Investigamos necesidades de las personas para diseñar una propuesta de alerta comunitaria más comprensible, accesible y cercana al contexto de Lima.</p></div><div class="team-panel"><span class="eyebrow">EL EQUIPO</span><ul class="team-list"><li><span>DA</span>Diego Arredondo</li><li><span>MC</span>Micael Catay</li><li><span>JD</span>José Camilo Dulanto</li><li><span>NF</span>Nicolás Fuentes</li><li><span>CJ</span>Carlos Jaulis</li><li><span>SM</span>Sebastián Martínez</li></ul><p>Investigación de usuarios · Diseño UX/UI · Prototipado</p></div></div></section>
-
-    <section class="section faq-section" id="preguntas" data-view="preguntas" aria-labelledby="faq-title"><div class="container faq-layout"><div><span class="eyebrow">RESOLVAMOS TUS DUDAS</span><h1 class="view-title" id="faq-title" tabindex="-1">Antes de dar<br>el siguiente paso.</h1><p>Conoce el propósito y el estado actual de SafeAlert.</p><a href="#contacto" class="text-link">Tengo otra consulta</a></div><div class="faq-list">
-      <details open><summary>¿Qué es SafeAlert?<span aria-hidden="true"></span></summary><p>Es una propuesta de sistema de alerta comunitaria geolocalizada. Busca reunir avisos comprensibles, orientación de evacuación y herramientas de comunicación familiar para residentes, población flotante y equipos de respuesta.</p></details>
-      <details><summary>¿SafeAlert ya está disponible para descargar?<span aria-hidden="true"></span></summary><p>El proyecto se encuentra en fase de prototipo académico. Puedes conocer sus diseños y explorar una demostración de escritorio. Esta página no ofrece una aplicación final para descargar.</p></details>
-      <details><summary>¿Para quién está pensada la propuesta?<span aria-hidden="true"></span></summary><p>Para familias que viven en zonas de riesgo, personas que trabajan o transitan por lugares poco conocidos y personal de Serenazgo, Defensa Civil o centros de operaciones de emergencia.</p></details>
-      <details><summary>¿Cómo se plantea su uso con poca conexión?<span aria-hidden="true"></span></summary><p>El diseño contempla información esencial y mapas precargados para reducir la dependencia de datos móviles. La navegación offline real y la sincronización con autoridades son capacidades planteadas que requieren desarrollo y validación.</p></details>
-      <details><summary>¿Esta página emite alertas reales o solicita rescates?<span aria-hidden="true"></span></summary><p>No. Esta landing presenta el proyecto y sus prototipos. No está conectada a sistemas oficiales de alertas ni a servicios de emergencia. Las pantallas muestran escenarios ilustrativos.</p></details>
-      <details><summary>¿Cómo puedo conocer más del proyecto?<span aria-hidden="true"></span></summary><p>Revisa sus funciones, explora las pantallas del prototipo y utiliza el formulario de demostración de esta página para probar una solicitud de información. El formulario valida tus datos, pero no realiza un envío real.</p></details>
-    </div></div></section>
-
-    <section class="section contact-section" id="contacto" data-view="contacto" aria-labelledby="contact-title"><div class="container contact-layout"><div class="contact-copy"><span class="eyebrow light">EL PRIMER PASO ES CONOCERNOS</span><h1 class="view-title" id="contact-title" tabindex="-1">Una comunidad<br>más preparada<br><span>empieza contigo.</span></h1><p>¿Te interesa la propuesta para tu familia, tu comunidad o tu institución? Cuéntanos qué te gustaría conocer de SafeAlert.</p><div class="contact-points"><span><span data-icon="shield"></span>Una propuesta centrada en las personas</span><span><span data-icon="community"></span>Construida desde la investigación de usuarios</span><span><span data-icon="devices"></span>Diseño para escritorio y móvil</span></div></div><div class="contact-card"><form id="contact-form" novalidate><h3>Conoce más de SafeAlert</h3><p class="form-intro">Completa tu solicitud de información.<br><span>Los campos con * son obligatorios.</span></p><div class="form-fields"><div class="field"><label for="contact-name">Nombre completo *</label><input id="contact-name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Escribe tu nombre" required aria-describedby="name-error"><span class="field-error" id="name-error" hidden></span></div><div class="field-row"><div class="field"><label for="contact-email">Correo electrónico *</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="120" placeholder="nombre@correo.com" required aria-describedby="email-error"><span class="field-error" id="email-error" hidden></span></div><div class="field"><label for="contact-phone">Celular *</label><input id="contact-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="Ej. 987 654 321" required aria-describedby="phone-error"><span class="field-error" id="phone-error" hidden></span></div></div><div class="field"><label for="contact-message">¿Qué te gustaría conocer? *</label><textarea id="contact-message" name="message" rows="3" minlength="10" maxlength="800" placeholder="Cuéntanos sobre tu interés en el proyecto…" required aria-describedby="message-error"></textarea><span class="field-error" id="message-error" hidden></span></div><button class="button button-orange submit-button" type="submit">Enviar solicitud de ejemplo</button><p class="form-note">Formulario de demostración: valida la información y muestra una confirmación. No envía ni almacena tus datos.</p></div><p class="sr-only" id="form-status" role="status"></p></form><div class="form-success" id="form-success" tabindex="-1" hidden><span class="success-icon" data-icon="check"></span><span class="eyebrow">SOLICITUD DE EJEMPLO VALIDADA</span><h3>¡Gracias, <span id="success-name"></span>!</h3><p>Completaste correctamente el formulario de SafeAlert.</p><p class="small-note">Esta fue una demostración. No se enviaron ni almacenaron datos y no recibirás un correo de respuesta.</p><button class="button" type="button" id="new-request">Volver al formulario</button></div></div></div></section>
-  </main>
-
-  <footer class="site-footer"><div class="container footer-main"><a class="brand" href="#inicio"><img src="assets/safealert.svg" width="38" height="42" alt=""><span>SafeAlert<small>PREPARADOS, JUNTOS</small></span></a><p>Información clara.<br>Una comunidad más cerca.</p><nav aria-label="Navegación del pie de página"><a href="#funciones">Funciones</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a><a href="#inicio">Volver al inicio</a></nav></div><div class="container footer-bottom"><span>© 2026 SafeAlert · Proyecto académico de HCI</span><span>Prototipo en desarrollo · Lima, Perú</span></div></footer>
-  <dialog id="preview-dialog" aria-labelledby="preview-title"><div class="preview-dialog-heading"><h2 id="preview-title">Captura de SafeAlert</h2><button type="button" class="close-preview" id="close-preview">Cerrar <span aria-hidden="true">×</span></button></div><img id="preview-image" width="469" height="936" src="Images/ALERTAS.png" alt="Vista ampliada del prototipo de SafeAlert"><p>Captura del prototipo · Contenido ilustrativo</p></dialog>
-</body>
+    </footer>
+    <dialog id="preview-dialog" aria-labelledby="preview-title">
+      <div class="preview-dialog-heading">
+        <h2 id="preview-title">Captura de SafeAlert</h2>
+        <button type="button" class="close-preview" id="close-preview">
+          Cerrar <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <img
+        id="preview-image"
+        width="469"
+        height="936"
+        src="Images/ALERTAS.png"
+        alt="Vista ampliada del prototipo de SafeAlert"
+      />
+      <p>Captura del prototipo · Contenido ilustrativo</p>
+    </dialog>
+  </body>
 </html>
